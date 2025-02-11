@@ -1,0 +1,94 @@
+class Node{
+    int data;
+    Node next;
+
+    public Node(int data){
+        this.data=data;
+        this.next=null;
+    }
+}
+
+class linkedListStack{
+    private Node top;
+    private int size;
+
+    public linkedListStack(){
+        this.top=null;
+        this.size=0;
+    }
+
+    public void push(int data){
+        Node newNode=new Node(data);
+        newNode.next=top;
+        top=newNode;
+        size++;
+    }
+
+    public int pop(){
+        if(isEmpty()){
+            return -1;
+        }
+        int poppedValue=top.next.data;
+        top=top.next;
+        size--;
+
+        return poppedValue;
+    }
+
+    public boolean isEmpty(){
+        if(top==null){
+            return true;
+        }
+        return false;
+    }
+
+    public int peek(){
+        if(isEmpty()){
+            throw new RuntimeException("Stack is empty - Cannot peek.");
+        }
+        return top.data;
+    }
+
+    public int size(){
+        return size;
+    }
+
+    public void display(){
+        if(isEmpty()){
+            System.out.println("Stack is empty.");
+            return;
+        }
+        Node current=top;
+        System.out.println("Stack elements top to bottom: ");
+        while(current!= null){
+            System.out.print(current.data);
+            if(current.next!=null){
+                System.out.print("-> ");
+            }
+            current=current.next;
+        }
+    }
+}
+
+public class stacks{
+    public static void main(String[] args){
+        linkedListStack stack=new linkedListStack();
+
+        stack.push(10);
+        stack.push(20);
+        stack.push(30);
+        stack.push(40);
+        stack.push(50);
+
+        stack.display();
+        System.out.println();
+
+        System.out.println("top element: "+stack.peek());
+        System.out.println("popped element: "+stack.pop());
+
+        stack.display();
+
+        System.out.println("current stack size: "+stack.size());
+        System.out.println("is stack emppty? : "+stack.isEmpty());
+    }
+}
