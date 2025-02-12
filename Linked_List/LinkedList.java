@@ -24,7 +24,7 @@ public class LinkedList {
         Tail = newNode;
         length = 1;
     }
-
+/*---------------------------------------------------------------------------------------------------------------*/
     //To print linked list
     public void print(){
         Node temp = Head;
@@ -49,6 +49,24 @@ public class LinkedList {
     public void getLength() {
         System.out.println("Length: " + length);
 }
+
+/*--------------------------------------------------------------------------------------------------------------*/
+// To append a Node to LinkedList
+
+    public void append(int value){
+        Node newNode = new Node(value);
+
+        if(length==0){
+            Head=newNode;
+            Tail=newNode;
+        } else{
+            Tail.next=newNode;
+        } 
+        length++;
+    }
+
+
+
 
 public static void main(String[] args) {
     LinkedList Mylinkedlist = new LinkedList(4);

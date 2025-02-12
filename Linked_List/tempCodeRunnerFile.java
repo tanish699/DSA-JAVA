@@ -1,1 +1,3 @@
-package Linked_List;
+Mylinkedlist.getHead();
+        Mylinkedlist.getTail();
+        Mylinkedlist.getLength();
