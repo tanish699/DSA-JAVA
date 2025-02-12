@@ -3,14 +3,16 @@
 public class Main {
     public static void main(String[] args) {
         
-        LinkedList Mylinkedlist = new LinkedList(4);
+        LinkedList Mylinkedlist = new LinkedList(1);
 
         // Mylinkedlist.getHead();
         // Mylinkedlist.getTail();
         // Mylinkedlist.getLength();
 
-        Mylinkedlist.print();
-        Mylinkedlist.append(9);
+        // Mylinkedlist.print();
+        Mylinkedlist.append(2);
+        // Mylinkedlist.print();
+        System.out.println(Mylinkedlist.removeLast().value);
         Mylinkedlist.print();
 
 

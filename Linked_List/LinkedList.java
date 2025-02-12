@@ -64,17 +64,33 @@ public class LinkedList {
         } 
         length++;
     }
-
+/*--------------------------------------------------------------------------------------------------------------*/
+//To remove Last node of linked list
+public Node removeLast(){
+    if(length==0) return null;
+    
+    Node temp = Head;
+    Node pre = Head;
+    while(temp.next!=null){
+        pre = temp;
+        temp = temp.next;
+    }
+    Tail = pre;
+    Tail.next = null;
+    length--;
+    if(length==0){ //If Linked list has only single element
+      Head = null;
+      Tail = null;
+    } 
+    return temp;
+}
 
 
 
 public static void main(String[] args) {
     LinkedList Mylinkedlist = new LinkedList(4);
 
-        Mylinkedlist.getHead();
-        Mylinkedlist.getTail();
         Mylinkedlist.getLength();
-        Mylinkedlist.print();
 }
 
 }
