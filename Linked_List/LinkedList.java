@@ -61,6 +61,7 @@ public class LinkedList {
             Tail=newNode;
         } else{
             Tail.next=newNode;
+            Tail = newNode;
         } 
         length++;
     }
@@ -106,6 +107,18 @@ public Node removeFist(){
     length--;
     if(length==0){
         Tail=null;
+    }
+    return temp;
+}
+/*--------------------------------------------------------------------------------------------------------------*/
+//To Get a node in linked list
+public Node Get(int index){
+    if(index<0 || index >=length){
+        return null;
+    }
+    Node temp = Head;
+    for(int i = 0;i<index;i++){
+        temp = temp.next;
     }
     return temp;
 }
