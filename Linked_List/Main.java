@@ -14,8 +14,9 @@ public class Main {
         Mylinkedlist.print();
         System.out.println("-------");
         // System.out.println(Mylinkedlist.removeLast().value);
-        Mylinkedlist.prepend(8);
-        Mylinkedlist.print();
+        // Mylinkedlist.prepend(8);
+        System.out.println(Mylinkedlist.removeFist().value);
+        // Mylinkedlist.print();
 
 
 

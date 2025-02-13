@@ -96,7 +96,19 @@ public void prepend(int value){
       Head = newNode;
     } length++;
 }
-
+/*--------------------------------------------------------------------------------------------------------------*/
+//To prepend a node in linked list
+public Node removeFist(){
+    if(length==0) return null;
+    Node temp = Head;
+    Head=Head.next;
+    temp.next=null;
+    length--;
+    if(length==0){
+        Tail=null;
+    }
+    return temp;
+}
 
 
 public static void main(String[] args) {
