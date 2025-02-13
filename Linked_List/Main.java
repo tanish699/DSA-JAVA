@@ -11,8 +11,10 @@ public class Main {
 
         // Mylinkedlist.print();
         Mylinkedlist.append(2);
-        // Mylinkedlist.print();
-        System.out.println(Mylinkedlist.removeLast().value);
+        Mylinkedlist.print();
+        System.out.println("-------");
+        // System.out.println(Mylinkedlist.removeLast().value);
+        Mylinkedlist.prepend(8);
         Mylinkedlist.print();
 
 

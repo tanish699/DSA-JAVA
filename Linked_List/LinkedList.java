@@ -84,13 +84,25 @@ public Node removeLast(){
     } 
     return temp;
 }
+/*--------------------------------------------------------------------------------------------------------------*/
+//To prepend a node in linked list
+public void prepend(int value){
+    Node newNode = new Node(value);
+    if(length==0){
+        Head=newNode;
+        Tail=newNode;
+    } else {
+      newNode.next = Head;
+      Head = newNode;
+    } length++;
+}
 
 
 
 public static void main(String[] args) {
     LinkedList Mylinkedlist = new LinkedList(4);
 
-        Mylinkedlist.getLength();
+        System.out.println("Compilation sucess Without errors "+ Mylinkedlist);
 }
 
 }
