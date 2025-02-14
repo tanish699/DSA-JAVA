@@ -122,6 +122,16 @@ public Node Get(int index){
     }
     return temp;
 }
+/*--------------------------------------------------------------------------------------------------------------*/
+//To Set a node in linked list
+public boolean Set(int index, int value){
+    Node temp = Get(index);
+    if(temp!=null){
+        temp.value=value;
+        return true;
+    }
+    return false;
+}
 
 
 public static void main(String[] args) {
