@@ -16,11 +16,12 @@ public class Main {
         Mylinkedlist.print();
         // Mylinkedlist.getLength();
         System.out.println("-------");
-        // System.out.println(Mylinkedlist.Get(2).value);
-        System.out.println(Mylinkedlist.Set(1, 9));
+        // // System.out.println(Mylinkedlist.Get(2).value);
+        // System.out.println(Mylinkedlist.Set(1, 9));
         // System.out.println(Mylinkedlist.removeLast().value);
         // Mylinkedlist.prepend(8);
         // System.out.println(Mylinkedlist.removeFist().value);
+        Mylinkedlist.Insert(9, 2);
         Mylinkedlist.print();
 
 
