@@ -21,7 +21,9 @@ public class Main {
         // System.out.println(Mylinkedlist.removeLast().value);
         // Mylinkedlist.prepend(8);
         // System.out.println(Mylinkedlist.removeFist().value);
-        Mylinkedlist.Insert(9, 2);
+        // Mylinkedlist.Insert(9, 2);
+        System.out.println(Mylinkedlist.Remove(2).value);
+        System.out.println("-------");
         Mylinkedlist.print();
 
 

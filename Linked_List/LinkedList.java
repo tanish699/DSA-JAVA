@@ -153,7 +153,25 @@ public boolean Insert(int value, int index){
     length++;
     return true;
 }
-
+/*--------------------------------------------------------------------------------------------------------------*/
+//To Remove a node in linked list
+public Node Remove(int index){
+    if(index<0||index>length){
+        return null;
+    }
+    if(index==0){
+       return removeFist();
+    }
+    if(index==length){
+        return removeLast();
+    }
+    Node temp = Get(index);
+    Node prev = Get(index-1);
+    prev.next=temp.next;
+    temp.next=null;
+    length--;
+    return temp;
+}
 
 public static void main(String[] args) {
     LinkedList Mylinkedlist = new LinkedList(4);
