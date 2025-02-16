@@ -172,6 +172,21 @@ public Node Remove(int index){
     length--;
     return temp;
 }
+/*--------------------------------------------------------------------------------------------------------------*/
+//To Reverse a linked list
+public void Reverse(){
+    Node temp = Head;
+    Head = Tail;
+    Node after = temp.next;
+    Node before = null;
+    for(int i=0; i<length;i++){
+        after = temp.next;
+        temp.next = before;
+        before = temp;
+        temp = after;
+    }
+
+}
 
 public static void main(String[] args) {
     LinkedList Mylinkedlist = new LinkedList(4);

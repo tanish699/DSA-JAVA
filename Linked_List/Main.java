@@ -13,6 +13,7 @@ public class Main {
         Mylinkedlist.append(1);
         Mylinkedlist.append(2);
         Mylinkedlist.append(3);
+        Mylinkedlist.append(4);
         Mylinkedlist.print();
         // Mylinkedlist.getLength();
         System.out.println("-------");
@@ -22,7 +23,8 @@ public class Main {
         // Mylinkedlist.prepend(8);
         // System.out.println(Mylinkedlist.removeFist().value);
         // Mylinkedlist.Insert(9, 2);
-        System.out.println(Mylinkedlist.Remove(2).value);
+        // System.out.println(Mylinkedlist.Remove(2).value);
+        Mylinkedlist.Reverse();
         System.out.println("-------");
         Mylinkedlist.print();
 
