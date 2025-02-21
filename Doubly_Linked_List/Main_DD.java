@@ -9,7 +9,8 @@ public class Main_DD {
         myDDL.print();
         System.out.println("-----------");
         // myDDL.removeLast();
-        myDDL.prepend(1);
+        // myDDL.prepend(1);
+        myDDL.removeFirst();
         myDDL.print();
     }
 }
