@@ -8,7 +8,8 @@ public class Main_DD {
         myDDL.append(6);
         myDDL.print();
         System.out.println("-----------");
-        myDDL.removeLast();
+        // myDDL.removeLast();
+        myDDL.prepend(1);
         myDDL.print();
     }
 }

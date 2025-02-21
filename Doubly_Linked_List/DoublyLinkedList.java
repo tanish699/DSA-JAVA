@@ -79,7 +79,21 @@ public class DoublyLinkedList {
             temp.prev=null;
         } length--;
         return temp;
-    }   
+    }
+/*---------------------------------------------------------------------------------------------------------------*/
+    //To prepend a node in doubly linked list
+    public void prepend(int value){
+	    Node newNode = new Node(value);
+	    if(length==0){
+	        head = newNode;
+	        tail = newNode;
+	    } else {
+	     newNode.next=head;
+	     head.prev=newNode;
+	     head=newNode;
+	    }
+	    length++;
+	}       
 
     public static void main(String[] args) {
         System.out.println("Code Runed Sucessfully");
