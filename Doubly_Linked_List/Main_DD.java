@@ -10,7 +10,8 @@ public class Main_DD {
         System.out.println("-----------");
         // myDDL.removeLast();
         // myDDL.prepend(1);
-        myDDL.removeFirst();
-        myDDL.print();
+        // myDDL.removeFirst();
+        System.out.println(myDDL.get(4).value); 
+        // myDDL.print();
     }
 }
