@@ -113,7 +113,7 @@ public class DoublyLinkedList {
 	}
 
 /*---------------------------------------------------------------------------------------------------------------*/
-    //To removeFirst node in doubly linked list
+    //To GET node in doubly linked list
     public Node get(int index){
         if(index<0||index>length){
             return null;
@@ -132,6 +132,16 @@ public class DoublyLinkedList {
         return temp;
     }
 
+/*---------------------------------------------------------------------------------------------------------------*/
+    //To SET node in doubly linked list
+    public boolean set(int index, int value){
+        Node temp = get(index);
+        if(temp!=null){
+            temp.value = value;
+            return true;
+        }
+        return false;
+    }
  
     public static void main(String[] args) {
         System.out.println("Code Runed Sucessfully");
