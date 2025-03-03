@@ -142,7 +142,33 @@ public class DoublyLinkedList {
         }
         return false;
     }
+/*---------------------------------------------------------------------------------------------------------------*/
+    //To INSERT node in doubly linked list
+    public boolean insert(int index, int value){
+        if(index<0||index>length) return false;
+        if(index==0){
+            prepend(value);
+            return true;
+        }
+        if(index==length){
+            append(value);
+            return true;
+        }
+        Node newnode = new Node(value);
+        Node before = get(index-1);
+        Node after = before.next;
+        before.next=newnode;
+        newnode.prev=before;
+        after.prev=newnode;
+        newnode.next=after;
+        length++;
+        return true;
+    }    
  
+
+
+
+
     public static void main(String[] args) {
         System.out.println("Code Runed Sucessfully");
     }

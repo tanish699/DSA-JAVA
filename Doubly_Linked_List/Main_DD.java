@@ -12,7 +12,8 @@ public class Main_DD {
         // myDDL.prepend(1);
         // myDDL.removeFirst();
         // System.out.println(myDDL.get(4).value);
-        myDDL.set(0, 1);
+        // myDDL.set(0, 1);
+        myDDL.insert(1, 1);
         myDDL.print();
     }
 }
