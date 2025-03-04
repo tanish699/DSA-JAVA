@@ -13,7 +13,8 @@ public class Main_DD {
         // myDDL.removeFirst();
         // System.out.println(myDDL.get(4).value);
         // myDDL.set(0, 1);
-        myDDL.insert(1, 1);
+        // myDDL.insert(1, 1);
+        myDDL.remove(2);
         myDDL.print();
     }
 }

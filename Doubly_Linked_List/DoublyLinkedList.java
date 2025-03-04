@@ -164,8 +164,20 @@ public class DoublyLinkedList {
         length++;
         return true;
     }    
- 
-
+/*---------------------------------------------------------------------------------------------------------------*/
+    //To REMOVE node in doubly linked list
+    public Node remove(int index){
+        if(index<0||index>length) return null;
+        if(index==0)removeFirst();
+        if(index==length)removeLast();
+        Node temp = get(index);
+        temp.next.prev = temp.prev;
+        temp.prev.next = temp.next;
+        temp.next=null;
+        temp.prev=null;
+        length--;
+        return temp;
+    } 
 
 
 
