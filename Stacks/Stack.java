@@ -36,8 +36,19 @@ public class Stack {
        System.out.println("Height: " + height);
     }
 
-    
-
+// Adding element in Stack
+    public void push(int value){
+        Node newNode = new Node(value);
+        if(height==0){
+            top = newNode;
+        } else{
+            newNode.next = top;
+            top = newNode;
+            
+        } 
+        height++;
+    }
+ 
     public static void main(String[] args) {
         System.out.println("Code executed Without errors");
     }
