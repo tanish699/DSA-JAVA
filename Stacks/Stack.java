@@ -48,6 +48,19 @@ public class Stack {
         } 
         height++;
     }
+
+// Removing element from stack
+    public Node pop(){
+        Node temp = top;
+        if(height==0){
+          return null;
+        } else {
+          top = top.next;
+          temp.next = null;
+        }
+        height--;
+        return temp;
+    }
  
     public static void main(String[] args) {
         System.out.println("Code executed Without errors");

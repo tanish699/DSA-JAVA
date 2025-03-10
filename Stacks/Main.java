@@ -16,9 +16,13 @@ public class Main {
         // myStack.printStack();
         // print();
         myStack.push(2);
+        myStack.push(9);
         // myStack.printStack();
         // myStack.getHeight();
         // myStack.getTop();
+        // System.out.println(myStack.pop().value);
+        print();
+        myStack.printStack();
 
     }
 }
