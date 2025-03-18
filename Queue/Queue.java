@@ -65,6 +65,22 @@ public class Queue {
         length++;
     }
 
+// Adding a Node in Queue
+    public Node deque(){
+        if(length==0){
+            return null;
+        }
+        Node temp = first;
+        if(length==1){
+            first = null;
+            last = null;
+        } else {
+            first=first.next;
+            temp.next=null;
+        }
+        length--;
+        return temp;
+    }
 
 
 
@@ -75,6 +91,9 @@ public class Queue {
         qt.printQueue();
         qt.enque(1);
         qt.enque(2);
+        qt.enque(9);
+        qt.printQueue();
+        qt.deque();
         qt.printQueue();
 
 
