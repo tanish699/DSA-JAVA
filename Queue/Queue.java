@@ -29,6 +29,7 @@ public class Queue {
             System.out.println(temp.value);
             temp = temp.next;
         }
+        System.out.println("---------");
     }
 
     public void getFirst() {
@@ -51,6 +52,19 @@ public class Queue {
         System.out.println("Length: " + length);
     }
 
+// Adding a Node in Queue
+    public void enque(int value){
+        Node nn = new Node(value);
+        if(length==0){
+            first = nn;
+            last = nn;
+        } else {
+           last.next = nn;
+           last = nn;
+        }
+        length++;
+    }
+
 
 
 
@@ -58,6 +72,9 @@ public class Queue {
         System.out.println("Code executed Sucessfully");
 
         Queue qt = new Queue(0);
+        qt.printQueue();
+        qt.enque(1);
+        qt.enque(2);
         qt.printQueue();
 
 
