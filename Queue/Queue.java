@@ -65,7 +65,7 @@ public class Queue {
         length++;
     }
 
-// Adding a Node in Queue
+// Removing a Node in Queue
     public Node deque(){
         if(length==0){
             return null;
